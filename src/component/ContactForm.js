@@ -11,6 +11,7 @@ const ContactForm = () => {
 
   const addContact = (event) =>{
     event.preventDefault(); // Form의 특징 페이지를 새로고침 시킴! 그것을 막아주기 위해 쓰이는 것
+    dispatch({type:'ADD_CONTACT' , payload: {name, number}})
   }
 
   return (
